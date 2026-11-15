@@ -18,7 +18,7 @@ Ein reproduzierbares Werkzeugset, um eine lokal auf macOS laufende Quarkus-Anwen
 - k6 und async-profiler für Last- und CPU/Allocation-Profile
 - Quarkus mit `io.quarkus:quarkus-micrometer-registry-prometheus`
 
-Host-Werkzeuge nach Unternehmensvorgaben installieren. Beispiel mit Homebrew:
+Host-Werkzeuge installieren. Beispiel mit Homebrew:
 
 ```bash
 brew install k6 async-profiler
