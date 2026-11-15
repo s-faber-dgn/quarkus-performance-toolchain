@@ -1,0 +1,15 @@
+layout {
+    tab name="Monitoring" {
+        pane split_direction="vertical" {
+            pane name="Prometheus" command="podman" { args "compose" "logs" "-f" "prometheus" }
+            pane name="Grafana" command="bash" { args "-lc" "open http://localhost:3000; exec bash" }
+        }
+    }
+    tab name="Load test" {
+        pane name="k6" command="bash" {
+            args "-lc" "echo 'K6_PATH auf einen echten GET-Endpunkt der App setzen, dann k6 run k6/smoke.js starten'; exec bash"
+        }
+        pane name="JVM" command="bash" { args "-lc" "jcmd -l; exec bash" }
+    }
+}
+

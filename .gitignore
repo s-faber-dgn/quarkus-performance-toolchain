@@ -1,0 +1,6 @@
+/artifacts/
+*.hprof
+*.jfr
+*.html
+.DS_Store
+
